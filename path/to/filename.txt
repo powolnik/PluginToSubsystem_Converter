@@ -1,0 +1,13 @@
+# Example commands using -Command parameter
+
+# Run a single cmdlet
+powershell.exe -Command {Get-Process}
+
+# Run a command string with arguments
+powershell.exe -Command "& {Get-Item C:\Windows}"
+
+# Run a multi-line script block
+powershell.exe -Command {
+    Write-Host "Hello, World!"
+    Get-Date
+}
